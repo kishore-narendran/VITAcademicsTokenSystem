@@ -99,7 +99,7 @@ class TimeTable:
 						labs.append(int(slot[y if y!=0 else 1:x-1]))
 						y = x + 1
 					else:
-						labs.append(int(slot[y:]))
+						labs.append(int(slot[y if y!=0 else 1:]))
 						break
 				for lab in labs:
 					for i in range(0,5):
